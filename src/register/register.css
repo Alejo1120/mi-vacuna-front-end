@@ -55,7 +55,7 @@ body{
     border-radius: 25px;
     border-color: var(--morado-ligth);
     font-family: var(--tipletra);
-    width: 150px;
+    
 }
 #apellido{
     color: var(--letra-color);
@@ -65,7 +65,7 @@ body{
     border-radius: 25px;
     border-color: var(--morado-ligth);
     font-family: var(--tipletra);
-    width: 150px;
+   
 }
 
 #identificacion{
@@ -78,7 +78,7 @@ body{
     border-radius: 25px;
     border-color: var(--morado-ligth);
     font-family: var(--tipletra);
-    width: 150px;
+    
 }
 
 #celular{
@@ -91,7 +91,7 @@ body{
     border-radius: 25px;
     border-color: var(--morado-ligth);
     font-family: var(--tipletra);
-    width: 150px;
+    
 }
 
 #direccion{
@@ -104,7 +104,7 @@ body{
     border-radius: 25px;
     border-color: var(--morado-ligth);
     font-family: var(--tipletra);
-    width: 150px;
+    
 }
 
 #email{
@@ -117,7 +117,7 @@ body{
     border-radius: 25px;
     border-color: var(--morado-ligth);
     font-family: var(--tipletra);
-    width: 150px;
+    
 }
 
 #password{
@@ -130,7 +130,7 @@ body{
     border-radius: 25px;
     border-color: var(--morado-ligth);
     font-family: var(--tipletra);
-    width: 150px;
+    
     margin-bottom: 35px;
 
 }
