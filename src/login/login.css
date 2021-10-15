@@ -102,8 +102,6 @@ body{
     color: gold;
 }
 
-
-
 /* #cardcolor{
     height:100vh;
     width: 50%;
@@ -127,18 +125,18 @@ body{
 }
 
 .contai{
-    height: 73px;
+    height: 47px;
     width: 301px;
     background-color: var(--morado-dark);
 }
 .contai1{
-    height: 73px;
+    height: 53px;
     width: 201px;
     background-color: var(--morado-dark);
     
 }
 .contai2{
-    height: 73px;
+    height: 33px;
     width: 101px;
     background-color: var(--morado-dark);
 }
@@ -167,17 +165,19 @@ body{
 } */
 
 
-#titleinicio{
+
+.titleinitsection{
     justify-content: center;
     display: flex;
+}
+.titleinitsection h1{
     color: var(--fondo-color);
-    margin-bottom: 40px;
-    
-}
-#titleinicio h1{
     font-family: var(--iniciasesion);
-    font-size: 75px;
+    margin-bottom: 20px;
+    font-size: 60px;
+
 }
+
 #imgcenter{
     justify-content: center;
     display: flex;
@@ -190,7 +190,7 @@ body{
 }
 #textod{
     font-family: var(--iniciasesion);
-    margin-top: 2px;
+    margin-top: 20px;
     font-size: 20px;
     color: var(--fondo-color);
 }
