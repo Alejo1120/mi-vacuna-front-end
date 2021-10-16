@@ -1,0 +1,38 @@
+:root{
+    --morado-ligth: #4E36E9;
+    --morado-dark: #3521B5;
+    --letra-color: #000000;
+    --fondo-color: #ffffff;
+    --tipletra : 'Reem Kufi', sans-serif;
+    --iniciasesion : 'Rokkitt', serif;
+}
+
+#contai{
+    background-image: url(https://www.teahub.io/photos/full/269-2695264_fondo-madera-morado.jpg);
+    
+    height: 100vh;
+}
+#confirtitle{
+    background-color: transparent;
+    height: 100vh;
+    opacity: 20;  
+}
+h1{
+    padding-top: 25vh;
+    color: white;
+    font-family: 'Righteous', cursive;
+}
+img{
+    opacity: 10;
+}
+#ok{
+    margin: 30px;
+}
+#ok a{
+    color: white;
+    font-family:'Righteous', cursive; 
+    font-size: 25px;
+    
+    
+}
+
