@@ -1,5 +1,47 @@
+:root{
+    --morado-ligth: #4E36E9;
+    --morado-dark: #3521B5;
+    --letra-color: #000000;
+    --fondo-color: #ffffff;
+    --tipletra : 'Reem Kufi', sans-serif;
+    --iniciasesion : 'Rokkitt', serif;
+}
 
-
-*{
-    background-color: violet;
+body{
+    margin: 0;
+    padding: 0;
+}
+#cont-img{   /*container vertical*/
+   background-color: var(--morado-ligth);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 40vh;
+    height: 100vh;
+    align-content: space-between;
+    float: left;
+}
+#img-log{
+    margin: 30px;
+    padding: 5px;
+    height: 150px;
+    width: 150px;
+    box-shadow: 0.1px 0.3px 0.5px 1.5px #3521B5;
+    border-radius: 5px var(--morado-ligth);
+}
+.contarriba{
+    background-color: var(--morado-ligth);
+    height: 150px;
+}
+.btns-menu{
+    background-color: var(--morado-dark);
+    color: var(--fondo-color);
+    margin: 20px;
+    margin-bottom: 14px;
+    height: 40px;
+    width: 200px;
+    border-radius: 35px;
+    border: none;
+    font-family: var(--tipletra);
+    font-size: 18px ;
 }
