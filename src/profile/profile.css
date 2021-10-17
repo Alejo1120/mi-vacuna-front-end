@@ -110,3 +110,27 @@ body{
     padding: 20px;
     align-items: center;
 }
+
+.cardfotoperfil{
+    background-color: transparent;
+    height: 250px;
+    display: flex;
+}
+.cardphoto{
+   margin: 35px;
+}
+#photo{
+    height: 170px;
+    border-radius: 50%;
+    border: 1px solid var(--morado-dark);
+}
+#name-user{
+    color: var(--letra-color);
+    font-family: var(--tipletra);
+    font-size: 70px;
+}
+.line{
+    background-color: var(--morado-dark);
+    height: 3px;
+    width: 87vh;
+}
