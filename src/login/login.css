@@ -6,9 +6,19 @@
     --tipletra : 'Reem Kufi', sans-serif;
     --iniciasesion : 'Rokkitt', serif;
 }
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
 body{
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
 }
 .log{
     display: flex;
@@ -84,11 +94,24 @@ body{
 }
 
 #btn-login{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: auto;
+    padding: 10px 80px;
     background-color: var(--morado-ligth);
     font-family: var(--tipletra);
     border: var(--morado-ligth);
     box-shadow: 2px 2px 4px var(--morado-dark);
+    
 }
+
+.recover_password a {
+    color: var(--morado-ligth);
+    font-weight: bold;
+    
+}
+
 .ir{
     margin: 5vh;
     font-family: var(--tipletra);
@@ -194,3 +217,118 @@ body{
     font-size: 20px;
     color: var(--fondo-color);
 }
+
+/* 
+    MEDIA QUERYS
+*/
+
+
+@media screen and  (max-width: 737px) {
+    #cajacheck a {
+        color: cyan;
+        
+    }
+
+    .recover_password {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and  (max-width: 625px) {
+
+
+    body{
+        width:100%;
+        height: 100vh;
+        margin: 0 px;
+        padding: 0px ;
+        
+    }
+
+    .log{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        background: var(--morado-ligth);
+
+    }
+
+    .iconhuella{
+        /* ocultar  */
+        display: none;
+        margin: 0px auto;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 40px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .line {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    
+   #cardizqui {
+
+       width: 90%;
+       height: auto;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       border-radius: 15px;
+   }
+
+   .formulario {
+       width: 90%;
+       height: auto;
+       margin: 0px;
+   }
+
+   .container-lg{
+       background-color: darkgreen;
+   }
+
+   .recover_password a {
+    color: var(--morado-ligth);
+    font-weight: bold;
+    
+}
+
+   #cardere{
+       display: none;
+       overflow: hidden;
+   }
+
+   .ir {
+       display: flex;
+        padding: 0px;
+        background-color: transparent;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        width: 100%;
+      
+   }
+
+   .ir p {
+       background-color: none;
+       padding: 0px;
+   }
+   .ir a {
+
+    
+     background-color:none;
+    }
+}
+
