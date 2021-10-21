@@ -1,4 +1,4 @@
-:root{
+/* :root{
     --morado-ligth: #4E36E9;
     --morado-dark: #3521B5;
     --letra-color: #000000;
@@ -11,7 +11,7 @@ body{
     margin: 0;
     padding: 0;
 }
-#cont-img{   /*container vertical*/
+#cont-img{   /*container vertical
    background-color: var(--morado-ligth);
     display: flex;
     flex-wrap: wrap;
@@ -133,4 +133,162 @@ body{
     background-color: var(--morado-dark);
     height: 3px;
     width: 87vh;
+} */
+
+:root{
+    --width: 200px;
+    --padding: 10px;
+    --bgcolor: #4E36E9;
+    --hovercolor: gold;
+    --widthcolapse: 50px;
+}
+
+body{
+    background-color: rgb(0, 0, 179);
+    font-family: cursive;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    margin-left: var(--widthcolapse);
+}
+
+.body-expanded{  /*NO LEE LA ETIQUETA BODY*/
+    margin-left: var(--width);
+}
+
+#main-container{
+    color: white;
+}
+#sidemenu{
+    background-color: #4E36E9;
+    color: white;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+#sidemenu a{
+    color: aliceblue;
+    text-decoration: none;
+}
+/*HEADER*/
+#sidemenu #header{
+    box-sizing:border-box ;
+    border-bottom: solid 1px black;
+}
+#sidemenu #header #title{
+box-sizing: border-box;
+overflow: hidden;
+}
+#sidemenu #header #title, #sidemenu #header #menu-btn{
+    vertical-align: middle;
+}
+#sidemenu #header #menu-btn{
+    display: inline-block;
+}
+#sidemenu #header #menu-btn{
+    cursor: pointer;
+    padding: 10px;
+    width: var(--widthcolapse);
+    box-sizing: border-box;
+
+}
+#sidemenu #header #menu-btn:hover{
+    background-color: var(--hovercolor);
+}
+
+.btn-hamburguer{ /*rayas del menu hamburguer*/
+    background-color: white;
+    width: 100%;
+    height: 3px;
+    margin: 5px 0;
+}
+/*PROFILE*/
+#sidemenu #profile{
+    border-bottom: solid 1px var(--hovercolor);
+    padding: var(--padding) 0;
+    text-align: center;
+}
+#sidemenu #profile #photo{
+    box-sizing: border-box;
+    padding: var(--padding);
+    margin: 0 auto;
+}
+#sidemenu #profile #photo img{
+    border-radius: 50%;
+    width: 60%;
+}
+
+#sidemenu #profile #photo #name{
+    font-size: 24px;
+    padding: var(--padding) 0;
+    overflow: hidden;
+}
+/*ITEMS*/
+#sidemenu #menu-items{
+    overflow: hidden;
+}
+#sidemenu #menu-items .item{
+    width: var(--width);
+}
+#sidemenu #menu-items .item .icon{
+    display: inline-block;
+}
+#sidemenu #menu-items .item .icon .title{
+    font-size: 14px;
+    overflow: hidden;
+    display: inline-block;
+}
+#sidemenu #menu-items .item a{
+    display: block;
+}
+#sidemenu #menu-items .item a:hover{
+    background-color: var(--hovercolor);
+}
+#sidemenu #menu-items .item .icon{
+    box-sizing: border-box;
+    padding: var(--padding);
+    width: var(--widthcolapse);
+}
+#sidemenu #menu-items .item .icon img{
+    width: 100%;
+}
+
+#sidemenu #menu-items .item .icon .title{
+    padding: var(--padding) 0;
+}
+#sidemenu #menu-items .item .item-separator{
+    height: 1px;
+    border-bottom: solid 1px var(--hovercolor);
+    margin: 15px 0;
+}
+.menu-expanded{
+    width: var(--width);
+    box-shadow: 0 0 10px greenyellow;
+}
+.menu-expanded #header #title{
+    display: inline-block;
+    width: calc(100%-50px);
+    margin-right: -5px;
+    padding: var(--padding);
+}
+.menu-expanded #header #title span{
+    width: calc(var(--width) - var(--widthcolapse) - 5px);
+    overflow: hidden;
+    display: inline-block;
+}
+.menu-expanded #profile #photo{
+    width: 200px;
+}
+.menu-expanded #profile #name{
+    width: 100%;
+}
+.menu-collapsed{
+    width: var(--widthcolapse);
+}
+.menu-collapsed #profile #name{
+    display: none;
+}
+.menu-collapsed .item{
+    width: 100px;
 }
