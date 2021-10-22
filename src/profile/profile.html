@@ -1,79 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>menu hamburguer</title>
     <link rel="stylesheet" href="profile.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/qrious@4.0.2/dist/qrious.js"></script>
+
 </head>
 
-<body class="body-expanded" >
+<body class="body-expanded">
 
     <!-- MENU-HAMBURGUESA -->
-     <div id="sidemenu" class="menu-collapsed">
-         <!-- HEADER -->
-         <div id="header">
-             <div id="title"></div>
-             <div id="menu-btn">
-                 <div class="btn-hamburguer"></div>
-                 <div class="btn-hamburguer"></div>
-                 <div class="btn-hamburguer"></div>
-             </div>
-         </div>
+    <div id="sidemenu" class="menu-collapsed">
+        <!-- HEADER -->
+        <div id="header">
+            <div id="title"></div>
+            <div id="menu-btn">
+                <div class="btn-hamburguer"></div>
+                <div class="btn-hamburguer"></div>
+                <div class="btn-hamburguer"></div>
+            </div>
+        </div>
 
-         <!-- PROFILE -->
-         <div id="profile">
-             <div id="photo"><img src="../assets/avatar.jpg" alt=""></div>
-             <div id="name">
-                 <spam>Name user</spam>
-             </div>
-         </div>
+        <!-- PROFILE -->
+        <div id="profile">
+            <div id="photo"><img src="../assets/avatar.jpg" alt=""></div>
+            <div id="name">
+                <spam>Name user</spam>
+            </div>
+        </div>
 
-         <!-- ITEMS -->
-         <div id="menu-items">
-             <div class="item">
-                 <a href="#">
-                     <div class="icon">
-                         <img src="../assets/huella-white.png" alt="">
-                         <div class="title">
+        <!-- ITEMS -->
+        <div id="menu-items">
+            <div class="item">
+                <a href="#">
+                    <div class="icon">
+                        <img src="../assets/huella-white.png" alt="">
+                        <div class="title">
                             <span>huellas</span>
-                         </div>
-                     </div>
-                 </a>
-             </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
 
-             <div class="item-separator">
+            <div class="item-separator">
                 <div class="item">
                     <a href="#">
                         <div class="icon">
                             <img src="../assets/huella-white.png" alt="">
                             <div class="title">
-                               <span>huellas</span>
+                                <span>huellas</span>
                             </div>
                         </div>
                     </a>
                 </div>
-             </div>
-         </div>
+            </div>
+        </div>
 
-     </div>
+    </div>
 
-     <div id="main-container">
-         hola a todos
-     </div>
+    <div class="cardphoto-name">
+        <div class="caja">
+            <div class="photo profile">
+                <img src="../assets/avatar.jpg" alt="avatar-image">
+            </div>
+            <div class="name-profile">
+                <h1>Pauka martines</h1>
+            </div>
+        </div>
 
-     <script>
-         const btn = document.querySelector('#menu-btn');
-         const menu = document.querySelector('#sidemenu');
-        btn.addEventListener('click', e =>{
+        <div class="mb-3 form-check" id="cajacheck">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Editar</label>
+        </div>
+    </div>
+
+
+    <div class="card-dates">
+        <form class="formulario">
+
+            <div class="row g-3">
+                <div class="col" id="name">
+                    <label for="Nombre" class="form-label">Nombre </label>
+                    <input type="text" class="form-control" aria-label="First name">
+                </div>
+                <div class="col" id="apellido">
+                    <label for="Apellido" class="form-label">Apellido </label>
+                    <input type="text" class="form-control" aria-label="Last name">
+                </div>
+            </div>
+
+            <div class="row g-3">
+                <div class="col" id="identificacion">
+                    <label for="Identificacion" class="form-label">Identificacion </label>
+                    <input type="text" class="form-control" aria-label="First name">
+                </div>
+                <div class="col" id="celular">
+                    <label for="Celular" class="form-label">Celular </label>
+                    <input type="text" class="form-control" aria-label="Last name">
+                </div>
+            </div>
+
+            <div class="row g-3">
+                <div class="col" id="email">
+                    <label for="Email" class="form-label">Email </label>
+                    <input type="email" class="form-control" aria-label="Last name">
+                </div>
+
+                <div class="col" id="direccion">
+                    <label for="Direccion" class="form-label">Direccion </label>
+                    <input type="text" class="form-control" aria-label="First name">
+                </div>
+
+            </div>
+            <div class="row g-3">
+                <div class="col" id="password">
+                    <label for="Password" class="form-label">Password </label>
+                    <input type="password" class="form-control" aria-label="First name">
+                </div>
+
+                <div class="col" id="password">
+                    <label for="Password" class="form-label">Verify password </label>
+                    <input type="password" class="form-control" aria-label="First name">
+                </div>
+
+
+            </div>
+
+        </form>
+        <img alt="Código QR" id="codigo">
+
+
+    <script>
+        const btn = document.querySelector('#menu-btn');
+        const menu = document.querySelector('#sidemenu');
+        btn.addEventListener('click', e => {
             menu.classList.toggle("menu-expanded");
             menu.classList.toggle("menu-collapsed");
 
             document.querySelector('body').classList.toggle('body-expanded');
         });
-     </script>
 
-    
+        new QRious({
+  element: document.querySelector("#codigo"),
+  value: "wwww.google.com", // La URL o el texto
+  size: 200,
+  backgroundAlpha: 0, // 0 para fondo transparente
+  foreground: "#8bc34a", // Color del QR
+  level: "H", // Puede ser L,M,Q y H (L es el de menor nivel, H el mayor)
+});
+    </script>
+
+
 </body>
+
 </html>

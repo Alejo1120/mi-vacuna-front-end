@@ -143,8 +143,9 @@ body{
     --widthcolapse: 50px;
 }
 
+
 body{
-    background-color: rgb(0, 0, 179);
+    /* background-color: rgb(0, 0, 179); */
     font-family: cursive;
     font-size: 18px;
     padding: 0;
@@ -158,6 +159,7 @@ body{
 
 #main-container{
     color: white;
+    color: black;
 }
 #sidemenu{
     background-color: #4E36E9;
