@@ -26,7 +26,7 @@ body{
     padding: 5px;
     height: 150px;
     width: 150px;
-    box-shadow: 0.1px 0.3px 0.5px 1.5px #3521B5;
+    izquierda: 0.1px 0.3px 0.5px 1.5px #3521B5;
     border-radius: 5px var(--morado-ligth);
 }
 .contarriba{
@@ -136,30 +136,29 @@ body{
 } */
 
 :root{
-    --width: 200px;
+    --width: 200px; /*menu expandido*/
     --padding: 10px;
     --bgcolor: #4E36E9;
     --hovercolor: gold;
-    --widthcolapse: 50px;
+    --widthcolapse: 50px; /*menu encogido*/
+    --morado-dark: #3521B5;
+    --tipletra : 'Reem Kufi', sans-serif;
+    --iniciasesion : 'Rokkitt', serif;
 }
 
 
 body{
     /* background-color: rgb(0, 0, 179); */
-    font-family: cursive;
+    font-family: var(--tipletra);
     font-size: 18px;
     padding: 0;
     margin: 0;
     margin-left: var(--widthcolapse);
 }
 
-.body-expanded{  /*NO LEE LA ETIQUETA BODY*/
+.body-expanded{ 
     margin-left: var(--width);
-}
-
-#main-container{
-    color: white;
-    color: black;
+    background-color: none;  
 }
 #sidemenu{
     background-color: #4E36E9;
@@ -170,17 +169,17 @@ body{
     top: 0;
 }
 #sidemenu a{
-    color: aliceblue;
+    color: white;
     text-decoration: none;
 }
 /*HEADER*/
 #sidemenu #header{
     box-sizing:border-box ;
-    border-bottom: solid 1px black;
+    border-bottom: solid 1px var(--morado-dark);
 }
 #sidemenu #header #title{
-box-sizing: border-box;
-overflow: hidden;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 #sidemenu #header #title, #sidemenu #header #menu-btn{
     vertical-align: middle;
@@ -207,7 +206,7 @@ overflow: hidden;
 }
 /*PROFILE*/
 #sidemenu #profile{
-    border-bottom: solid 1px var(--hovercolor);
+    border-bottom: solid 1px var(--morado-dark);
     padding: var(--padding) 0;
     text-align: center;
 }
@@ -233,16 +232,25 @@ overflow: hidden;
 #sidemenu #menu-items .item{
     width: var(--width);
 }
+.item{
+    background-color:var(--morado-dark);
+    margin:15px 0;
+}
 #sidemenu #menu-items .item .icon{
     display: inline-block;
+    background-color: yellowgreen;    
 }
 #sidemenu #menu-items .item .icon .title{
+  
     font-size: 14px;
     overflow: hidden;
     display: inline-block;
+    background-color: turquoise;
 }
-#sidemenu #menu-items .item a{
+#sidemenu #menu-items .item a{  /*CONTAINER DE OPMENU*/
+
     display: block;
+    background-color: violet;
 }
 #sidemenu #menu-items .item a:hover{
     background-color: var(--hovercolor);
@@ -262,11 +270,12 @@ overflow: hidden;
 #sidemenu #menu-items .item .item-separator{
     height: 1px;
     border-bottom: solid 1px var(--hovercolor);
-    margin: 15px 0;
+    margin: 15px 0px;
 }
-.menu-expanded{
-    width: var(--width);
-    box-shadow: 0 0 10px greenyellow;
+.menu-expanded{  /*menu encogido*/
+    /*width: var(--width);*/
+    width: var(--widthcolapse);
+    box-shadow: 0 0 10px var(--morado-dark);
 }
 .menu-expanded #header #title{
     display: inline-block;
@@ -280,17 +289,145 @@ overflow: hidden;
     display: inline-block;
 }
 .menu-expanded #profile #photo{
-    width: 200px;
+    /*width: 200px;*/
+    width: 100%;
 }
 .menu-expanded #profile #name{
     width: 100%;
 }
-.menu-collapsed{
-    width: var(--widthcolapse);
+.menu-collapsed{ /*menu expandido*/
+    /*width: var(--widthcolapse);*/
+    width: var(--width);
 }
-.menu-collapsed #profile #name{
+/*.menu-collapsed #profile #name
     display: none;
-}
+}*/
+
 .menu-collapsed .item{
     width: 100px;
 }
+
+.cardphoto-name{
+    background-color: #4E36E9;
+    display: flex;
+    width: 100%;
+}
+.caja{
+    background-color: transparent;
+    display: flex;
+    margin-left: 50px;
+}
+.photoprofile{
+    display: inline-flex;
+    margin: 10px 20px;
+}
+.photoprofile img{
+    border-radius: 50%;
+}
+.name-profile{
+    display: flex;
+    background-color: #4E36E9;
+    color: white;
+    font-family: var(--tipletra);
+    align-items: center;
+    font-size: 25px;
+}
+#cajacheck{
+    background-color: transparent;
+    align-items: center;
+    display: inline-flex;
+    font-family: var(--tipletra);
+    font-size: 20px;
+    color: white;
+    margin-left: 80px;
+}
+#exampleCheck1{
+    margin-right: 10px;
+}
+#label-edit{
+    align-items: center;
+    display: inline-flex;
+    font-family: var(--tipletra);
+}
+.card-dates{
+    margin-top: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.formulario{
+    margin:5vh;
+    margin-right: 10vh;
+}
+#name{
+    color: var(--letra-color);
+    font-family: var(--tipletra);
+}
+#name input{
+    border-radius: 25px;
+    border-color: var(--morado-ligth);
+    font-family: var(--tipletra);
+    
+}
+#apellido{
+    color: var(--letra-color);
+    font-family: var(--tipletra);
+}
+#apellido input{
+    border-radius: 25px;
+    border-color: var(--morado-ligth);
+    font-family: var(--tipletra);
+   
+}
+
+#identificacion{
+    color: var(--letra-color);
+    font-family: var(--tipletra);
+    margin-top: 25px;
+}
+
+#identificacion input{
+    border-radius: 25px;
+    border-color: var(--morado-ligth);
+    font-family: var(--tipletra);
+    
+}
+
+#celular{
+    color: var(--letra-color);
+    font-family: var(--tipletra);
+    margin-top: 25px;
+}
+
+#celular input{
+    border-radius: 25px;
+    border-color: var(--morado-ligth);
+    font-family: var(--tipletra);
+    
+}
+
+#direccion{
+    color: var(--letra-color);
+    font-family: var(--tipletra);
+    margin-top: 25px;
+}
+
+#direccion input{
+    border-radius: 25px;
+    border-color: var(--morado-ligth);
+    font-family: var(--tipletra);
+    
+}
+
+#email{
+    color: var(--letra-color);
+    font-family: var(--tipletra);
+    margin-top: 25px;
+}
+
+#email input{
+    border-radius: 25px;
+    border-color: var(--morado-ligth);
+    font-family: var(--tipletra);
+    
+}
+
