@@ -236,21 +236,57 @@ body{
     background-color:var(--morado-dark);
     margin:15px 0;
 }
-#sidemenu #menu-items .item .icon{
+/* #sidemenu #menu-items .item .icon{
     display: inline-block;
-    background-color: yellowgreen;    
+    background-color: yellowgreen;
+} */
+#sidemenu #menu-items .item .icon{
+    display: flex;
+    background-color: transparent;
+    width: 100%;
+    height: 60px;
 }
-#sidemenu #menu-items .item .icon .title{
+/* #sidemenu #menu-items .item .icon .title{
   
     font-size: 14px;
     overflow: hidden;
     display: inline-block;
     background-color: turquoise;
+} */
+.title{
+    background-color: transparent;
+    margin-left: 35px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+
 }
-#sidemenu #menu-items .item a{  /*CONTAINER DE OPMENU*/
+span{
+    font-size: 18px;
+    font-family: var(--tipletra);
+    display: flex;
+    align-items: center;
+}
+/*  esta en prueba #sidemenu #menu-items .item .icon .title{
+    background-color: turquoise;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    margin-left: 25px;
+    width: 600px;
+    margin-bottom: 10px;
+   
+} */
+/*#sidemenu #menu-items .item a{  /*CONTAINER DE OPMENU
 
     display: block;
     background-color: violet;
+}*/
+#sidemenu #menu-items .item a{
+    background-color:var(--morado-dark);
+    height: 100%;
+    width: 100%;
+    display: flex;
 }
 #sidemenu #menu-items .item a:hover{
     background-color: var(--hovercolor);
@@ -333,7 +369,7 @@ body{
     font-size: 25px;
 }
 #cajacheck{
-    background-color: transparent;
+    background-color: #4E36E9;
     align-items: center;
     display: inline-flex;
     font-family: var(--tipletra);
@@ -341,8 +377,11 @@ body{
     color: white;
     margin-left: 80px;
 }
+
 #exampleCheck1{
     margin-right: 10px;
+    background-color: #00f700;
+    border: solid 1px #3521B5;
 }
 #label-edit{
     align-items: center;
