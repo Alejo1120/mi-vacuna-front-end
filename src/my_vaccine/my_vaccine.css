@@ -1,140 +1,3 @@
-/* :root{
-    --morado-ligth: #4E36E9;
-    --morado-dark: #3521B5;
-    --letra-color: #000000;
-    --fondo-color: #ffffff;
-    --tipletra : 'Reem Kufi', sans-serif;
-    --iniciasesion : 'Rokkitt', serif;
-}
-
-body{
-    margin: 0;
-    padding: 0;
-}
-#cont-img{   /*container vertical
-   background-color: var(--morado-ligth);
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 40vh;
-    height: 100vh;
-    align-content: space-between;
-    float: left;
-}
-#img-log{
-    margin: 30px;
-    padding: 5px;
-    height: 150px;
-    width: 150px;
-    izquierda: 0.1px 0.3px 0.5px 1.5px #3521B5;
-    border-radius: 5px var(--morado-ligth);
-}
-.contarriba{
-    background-color: var(--morado-ligth);
-    height: 150px;
-}
-.btns-menu{
-    background-color: var(--morado-dark);
-    color: var(--fondo-color);
-    margin-bottom: 24px;
-    margin-left: 5px;
-    padding: -9px;
-    height: 60px;
-    width: 250px;
-    border-radius: 35px;
-    border: solid 1px var(--morado-dark);
-    font-family: var(--tipletra);
-    font-size: 22px;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-
-}
-.styles-btns{
-    width: 20px;
-    height: 20px;
-    margin: 5px;
-}
-#profile{
-    float: left;
-    margin-left: 25px;
-}
-#vacuna{
-    float: left;
-    margin-left: 25px;
-}
-#huella{
-    float: left;
-    margin-left: 25px;
-}
-#salir{
-    float: left;
-    margin-left: 25px;
-}
-.box-profile{
-    display: flex;
-}
-#profile-icon{
-    height: 65px;
-    margin: 40px;
-   
-}
-.title-profile{
-    color: var(--fondo-color);
-   margin-top: 20px;
-   font-family: var(--tipletra);
-   font-size: 20px;
-}
-.profile{
-    background-color: var(--morado-dark);
-    float: right;
-    height: 100px;
-    width: 380px;
-    margin-left: 320px;
-    margin-top: 20px;
-    border-radius: 5px;
-    box-shadow: 2px 0px 2px 2px rgba(38, 6, 219, 0.712);
-}
-.imgprofile{
-    display: flex;
-}
-#avatar{
-    margin:20px;
-    border-radius: 50%;
-    height: 50px;
-}
- h3{
-    color: var(--fondo-color);
-    font-family: var(--tipletra);
-    font-size: 20px;
-    padding: 20px;
-    align-items: center;
-}
-
-.cardfotoperfil{
-    background-color: transparent;
-    height: 250px;
-    display: flex;
-}
-.cardphoto{
-   margin: 35px;
-}
-#photo{
-    height: 170px;
-    border-radius: 50%;
-    border: 1px solid var(--morado-dark);
-}
-#name-user{
-    color: var(--letra-color);
-    font-family: var(--tipletra);
-    font-size: 70px;
-}
-.line{
-    background-color: var(--morado-dark);
-    height: 3px;
-    width: 87vh;
-} */
-
 :root{
     --width: 200px; /*menu expandido*/
     --padding: 10px;
@@ -148,7 +11,6 @@ body{
 
 
 body{
-    /* background-color: rgb(0, 0, 179); */
     font-family: var(--tipletra);
     font-size: 18px;
     padding: 0;
@@ -241,23 +103,12 @@ body{
     background-color:var(--morado-dark);
     margin:15px 0;
 }
-/* #sidemenu #menu-items .item .icon{
-    display: inline-block;
-    background-color: yellowgreen;
-} */
 #sidemenu #menu-items .item .icon{
     display: flex;
     background-color: transparent;
     width: 100%;
     height: 60px;
 }
-/* #sidemenu #menu-items .item .icon .title{
-  
-    font-size: 14px;
-    overflow: hidden;
-    display: inline-block;
-    background-color: turquoise;
-} */
 .title{
     background-color: transparent;
     margin-left: 35px;
@@ -272,21 +123,6 @@ span{
     display: flex;
     align-items: center;
 }
-/*  esta en prueba #sidemenu #menu-items .item .icon .title{
-    background-color: turquoise;
-    font-size: 14px;
-    display: flex;
-    justify-content: center;
-    margin-left: 25px;
-    width: 600px;
-    margin-bottom: 10px;
-   
-} */
-/*#sidemenu #menu-items .item a{  /*CONTAINER DE OPMENU
-
-    display: block;
-    background-color: violet;
-}*/
 #sidemenu #menu-items .item a{
     background-color:var(--morado-dark);
     height: 100%;
@@ -364,7 +200,8 @@ span{
     margin: 10px 20px;
 }
 .photoprofile img{
-    border-radius: 50%;
+    height: 50px;
+    width: 50px;
 }
 .name-profile{
     display: flex;
@@ -408,6 +245,7 @@ span{
     font-family: var(--tipletra);
     font-weight: 500;
     font-size: 20px;
+    margin-top: 20px;
 }
 #name input{
     background-color: var(--bgcolor);
@@ -417,13 +255,14 @@ span{
     font-family: var(--tipletra);
     box-shadow: 0 0 4px var(--bgcolor); 
 }
-#apellido{
+#especie{
     color: var(--letra-color);
     font-family: var(--tipletra);
     font-weight: 500;
     font-size: 20px;
+    margin-top: 20px;
 }
-#apellido input{
+#especie input{
     background-color: var(--bgcolor);
     color: #ffffff;
     border-radius: 25px;
@@ -433,14 +272,15 @@ span{
    
 }
 
-#identificacion{
+#Sexo{
     color: var(--letra-color);
     font-family: var(--tipletra);
     font-weight: 500;
     font-size: 20px;
+    margin-top: 30px;
 }
 
-#identificacion input{
+#Sexo input{
     background-color: var(--bgcolor);
     color: #ffffff;
     border-radius: 25px;
@@ -450,14 +290,15 @@ span{
     
 }
 
-#celular{
+#raza{
     color: var(--letra-color);
     font-family: var(--tipletra);
     font-weight: 500;
     font-size: 20px;
+    margin-top: 30px;
 }
 
-#celular input{
+#raza input{
     background-color: var(--bgcolor);
     color: #ffffff;
     border-radius: 25px;
@@ -472,6 +313,7 @@ span{
     font-family: var(--tipletra);
     font-weight: 500;
     font-size: 20px;
+    margin-top: 30px;
 }
 
 #direccion input{
@@ -484,14 +326,15 @@ span{
     
 }
 
-#email{
+#fech-nac{
     color: var(--letra-color);
     font-family: var(--tipletra);
     font-weight: 500;
     font-size: 20px;
+    margin-top: 30px;
 }
 
-#email input{
+#fech-nac input{
     background-color: var(--bgcolor);
     color: #ffffff;
     border-radius: 25px;
@@ -500,18 +343,33 @@ span{
     box-shadow: 0 0 4px var(--bgcolor); 
     
 }
-
-#btn-login{
-    background-color: transparent;
-    color: var(--morado-dark);
-    border-radius: 25px;
-    border: solid 1px var(--morado-dark);
+#name-propie{
+    color: var(--letra-color);
+    font-family: var(--tipletra);
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 30px;
 }
-
-#btn-login:hover{
+#name-propie input{
     background-color: var(--bgcolor);
     color: #ffffff;
+    border-radius: 25px;
+    border-color: none;
     font-family: var(--tipletra);
-    font-weight: 200;
+    box-shadow: 0 0 4px var(--bgcolor);
 }
-
+#celular{
+    color: var(--letra-color);
+    font-family: var(--tipletra);
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 30px;
+}
+#celular input{
+    background-color: var(--bgcolor);
+    color: #ffffff;
+    border-radius: 25px;
+    border-color: none;
+    font-family: var(--tipletra);
+    box-shadow: 0 0 4px var(--bgcolor);
+}

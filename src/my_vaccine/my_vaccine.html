@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
-    <link rel="stylesheet" href="profile.css">
+    <title>Mis Vacunas</title>
+    <link rel="stylesheet" href="my_vaccine.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,7 +40,7 @@
             <div id="name">
                 <spam>Paula martines</spam>
             </div>
-        </a>
+            </a>
         </div>
 
         <!-- ITEMS -->
@@ -89,19 +89,12 @@
     <div class="cardphoto-name">
         <div class="caja">
             <div class="photoprofile">
-                <img src="../assets/avatar.jpg" alt="avatar-image">
+                <img src="../assets/vacuna.svg" alt="avatar-image">
             </div>
             <div class="name-profile">
-                <h1>Paula martines</h1>
+                <h1>Carnet de Vacunas</h1>
             </div>
         </div>
-
-        
-        <div class="mb-3 form-check" id="cajacheck">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1" id="label-edit">Editar</label>
-        </div>
-        
         
     </div>
 
@@ -114,31 +107,31 @@
                     <input class="form-control" type="text" value="Nombre" aria-label="Disabled input example" disabled readonly>
                     <!-- <input type="text" class="form-control" aria-label="First name"> -->
                 </div>
-                <div class="col" id="apellido">
-                    <label for="Apellido" class="form-label">Apellido </label>
-                    <input class="form-control" type="text" value="Apellido" aria-label="Disabled input example" disabled readonly>
+                <div class="col" id="especie">
+                    <label for="especie" class="form-label">Especie </label>
+                    <input class="form-control" type="text" value="Especie" aria-label="Disabled input example" disabled readonly>
                     <!-- <input type="text" class="form-control" aria-label="Last name"> -->
                 </div>
             </div>
 
             <div class="row g-3">
-                <div class="col" id="identificacion">
-                    <label for="Identificacion" class="form-label">Identificacion </label>
-                    <input class="form-control" type="text" value="1007703025" aria-label="Disabled input example" disabled readonly>
+                <div class="col" id="Sexo">
+                    <label for="Sexo" class="form-label">Sexo</label>
+                    <input class="form-control" type="text" value="Masculino" aria-label="Disabled input example" disabled readonly>
                     <!-- <input type="text" class="form-control" aria-label="First name"> -->
                 </div>
-                <div class="col" id="celular">
-                    <label for="Celular" class="form-label">Celular </label>
-                    <input class="form-control" type="text" value="3132053604 " aria-label="Disabled input example" disabled readonly>
+                <div class="col" id="raza">
+                    <label for="raza" class="form-label">raza</label>
+                    <input class="form-control" type="text" value="raza " aria-label="Disabled input example" disabled readonly>
                     <!-- <input type="text" class="form-control" aria-label="Last name"> -->
                 </div>
             </div>
 
             <div class="row g-3">
-                <div class="col" id="email">
-                    <label for="Email" class="form-label">Email </label>
+                <div class="col" id="fech-nac">
+                    <label for="fech-nac" class="form-label">fecha-nacimiento</label>
                     <input class="form-control" type="text" value="mail@gmail.com" aria-label="Disabled input example" disabled readonly>
-                    <!-- <input type="email" class="form-control" aria-label="Last name"> -->
+                    <!-- <input type="fech-nac" class="form-control" aria-label="Last name"> -->
                 </div>
 
                 <div class="col" id="direccion">
@@ -147,35 +140,25 @@
                     <!-- <input type="text" class="form-control" aria-label="First name"> -->
                 </div>
 
-                <button type="submit" class="btn btn-primary" id="btn-login">Actualizar Datos</button>
+            </div>
+
+            <div class="row g-3">
+
+                <div class="col" id="name-propie">
+                    <label for="name-propie" class="form-label">Nombre Propietario</label>
+                    <input class="form-control" type="text" value="Paula" aria-label="Disabled input example" disabled readonly>
+                    <!-- <input type="text" class="form-control" aria-label="First name"> -->
+                </div>
+
+                <div class="col" id="celular">
+                    <label for="celular" class="form-label">celular</label>
+                    <input class="form-control" type="text" value="3107584825" aria-label="Disabled input example" disabled readonly>
+                    <!-- <input type="fech-nac" class="form-control" aria-label="Last name"> -->
+                </div>
 
             </div>
 
         </form>
-
-        <!-- CODIGO QR -->
-        <img alt="Código QR" id="codigo">
-
-    <script>
-        const btn = document.querySelector('#menu-btn');
-        const menu = document.querySelector('#sidemenu');
-        btn.addEventListener('click', e => {
-            menu.classList.toggle("menu-expanded");
-            menu.classList.toggle("menu-collapsed");
-
-            document.querySelector('body').classList.toggle('body-expanded');
-        });
-
-        new QRious({
-  element: document.querySelector("#codigo"),
-  value: "wwww.google.com", // La URL o el texto
-  size: 200,
-  backgroundAlpha: 0, // 0 para fondo transparente
-  foreground: "#8bc34a", // Color del QR
-  level: "H", // Puede ser L,M,Q y H (L es el de menor nivel, H el mayor)
-});
-    </script>
-
 
 </body>
 
