@@ -400,73 +400,112 @@ span{
 #name{
     color: var(--letra-color);
     font-family: var(--tipletra);
+    font-weight: 500;
+    font-size: 20px;
 }
 #name input{
+    background-color: var(--bgcolor);
+    color: #ffffff;
     border-radius: 25px;
-    border-color: var(--morado-ligth);
+    border-color: none;
     font-family: var(--tipletra);
-    
+    box-shadow: 0 0 4px var(--bgcolor); 
 }
 #apellido{
     color: var(--letra-color);
     font-family: var(--tipletra);
+    font-weight: 500;
+    font-size: 20px;
 }
 #apellido input{
+    background-color: var(--bgcolor);
+    color: #ffffff;
     border-radius: 25px;
-    border-color: var(--morado-ligth);
+    border-color: none;
     font-family: var(--tipletra);
+    box-shadow: 0 0 4px var(--bgcolor); 
    
 }
 
 #identificacion{
     color: var(--letra-color);
     font-family: var(--tipletra);
-    margin-top: 25px;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 #identificacion input{
+    background-color: var(--bgcolor);
+    color: #ffffff;
     border-radius: 25px;
-    border-color: var(--morado-ligth);
+    border-color: none;
     font-family: var(--tipletra);
+    box-shadow: 0 0 4px var(--bgcolor); 
     
 }
 
 #celular{
     color: var(--letra-color);
     font-family: var(--tipletra);
-    margin-top: 25px;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 #celular input{
+    background-color: var(--bgcolor);
+    color: #ffffff;
     border-radius: 25px;
-    border-color: var(--morado-ligth);
+    border-color: none;
     font-family: var(--tipletra);
+    box-shadow: 0 0 4px var(--bgcolor); 
     
 }
 
 #direccion{
     color: var(--letra-color);
     font-family: var(--tipletra);
-    margin-top: 25px;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 #direccion input{
+    background-color: var(--bgcolor);
+    color: #ffffff;
     border-radius: 25px;
-    border-color: var(--morado-ligth);
+    border-color: none;
     font-family: var(--tipletra);
+    box-shadow: 0 0 4px var(--bgcolor); 
     
 }
 
 #email{
     color: var(--letra-color);
     font-family: var(--tipletra);
-    margin-top: 25px;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 #email input{
+    background-color: var(--bgcolor);
+    color: #ffffff;
     border-radius: 25px;
-    border-color: var(--morado-ligth);
+    border-color: none;
     font-family: var(--tipletra);
+    box-shadow: 0 0 4px var(--bgcolor); 
     
+}
+
+#btn-login{
+    background-color: transparent;
+    color: var(--morado-dark);
+    border-radius: 25px;
+    border: solid 1px var(--morado-dark);
+}
+
+#btn-login:hover{
+    background-color: var(--bgcolor);
+    color: #ffffff;
+    font-family: var(--tipletra);
+    font-weight: 200;
 }
 
