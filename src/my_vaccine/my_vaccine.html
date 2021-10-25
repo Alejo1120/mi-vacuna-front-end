@@ -160,6 +160,33 @@
 
         </form>
 
+        <table class="table table-dark table-striped">
+            <tr>
+                <td>Fecha</td>
+            
+                <td>Peso</td>
+            
+                <td>Antiparasito</td>
+                
+                <td>ProxVacuna</td>
+
+                <td>Medico Veterinario</td>
+            </tr>     
+
+        </table>
+
+
+        <script>
+            const btn = document.querySelector('#menu-btn');
+            const menu = document.querySelector('#sidemenu');
+            btn.addEventListener('click', e => {
+                menu.classList.toggle("menu-expanded");
+                menu.classList.toggle("menu-collapsed");
+    
+                document.querySelector('body').classList.toggle('body-expanded');
+            });
+        </script>
+
 </body>
 
 </html>
